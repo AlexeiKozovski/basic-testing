@@ -12,43 +12,43 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should subtract two numbers', () => {
-      const result = simpleCalculator({
-          a: 5,
-          b: 3,
-          action: Action.Subtract,
-      });
+    const result = simpleCalculator({
+      a: 5,
+      b: 3,
+      action: Action.Subtract,
+    });
 
-      expect(result).toBe(2);
+    expect(result).toBe(2);
   });
 
   test('should multiply two numbers', () => {
-      const result = simpleCalculator({
-          a: 2,
-          b: 2,
-          action: Action.Multiply,
-      });
+    const result = simpleCalculator({
+      a: 2,
+      b: 2,
+      action: Action.Multiply,
+    });
 
-      expect(result).toBe(4);
+    expect(result).toBe(4);
   });
 
   test('should divide two numbers', () => {
-      const result = simpleCalculator({
-          a: 4,
-          b: 2,
-          action: Action.Divide,
-      });
+    const result = simpleCalculator({
+      a: 4,
+      b: 2,
+      action: Action.Divide,
+    });
 
-      expect(result).toBe(2);
+    expect(result).toBe(2);
   });
 
   test('should exponentiate two numbers', () => {
-      const result = simpleCalculator({
-          a: 4,
-          b: 2,
-          action: Action.Exponentiate,
-      });
+    const result = simpleCalculator({
+      a: 4,
+      b: 2,
+      action: Action.Exponentiate,
+    });
 
-      expect(result).toBe(16);
+    expect(result).toBe(16);
   });
 
   test('should return null for invalid action', () => {
