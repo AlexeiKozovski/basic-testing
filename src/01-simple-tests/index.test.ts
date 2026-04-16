@@ -53,7 +53,7 @@ describe('simpleCalculator tests', () => {
 
   test('should return null for invalid action', () => {
     const result = simpleCalculator({
-      a: 1,
+      a: 5,
       b: 2,
       action: '%',
     });
